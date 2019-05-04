@@ -124,4 +124,5 @@ function open () {
 }
 
 export PATH=/home/swft/.local/bin:$PATH
-alias config='/usr/bin/git --git-dir=/home/swft/.cfg/ --work-tree=/home/swft'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
