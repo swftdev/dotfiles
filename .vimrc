@@ -1,4 +1,16 @@
-filetype indent plugin on
+let mapleader=","
+
+set hidden
+
+set history=1000
+set showcmd
+set ruler
+set wildmenu
+set scrolloff=2
+set incsearch
+
+set bg=dark
+
 filetype indent plugin on
 set tabstop=8
 set expandtab
