@@ -127,4 +127,4 @@ export PATH=/home/swft/.local/bin:$PATH
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 stty -ixon
-
+set -o vi
