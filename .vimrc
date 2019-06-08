@@ -11,7 +11,7 @@ nnoremap <C-H> <C-W><C-H>
 set path+=**
 set wildmenu
 
-command! MakeTags !ctags -R .
+" command! MakeTags !ctags -R .
 " NOW WE CAN:
 " - Use ^] to jump to tag under cursor
 " - Use g^] for ambiguous tags
