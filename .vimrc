@@ -3,10 +3,13 @@ syntax enable
 filetype indent plugin on 
 
 let mapleader=","
+nnoremap <leader>o :setlocal spell! spelllang=en_us<CR>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+set splitbelow splitright
 
 set path+=**
 set wildmenu
@@ -25,9 +28,6 @@ let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
-set hidden
-set noswapfile
-
 set showcmd
 set ruler
 set scrolloff=2
@@ -45,6 +45,8 @@ set encoding=utf-8
 set history=1000
 set nobackup
 set bg=dark
+set hidden
+set noswapfile
 
 " Handles line Numbering, and color for said lines
 set number relativenumber
