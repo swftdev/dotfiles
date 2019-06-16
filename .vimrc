@@ -4,6 +4,7 @@ filetype indent plugin on
 
 let mapleader=","
 nnoremap <leader>o :setlocal spell! spelllang=en_us<CR>
+
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -30,7 +31,8 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 set showcmd
 set ruler
-set scrolloff=2
+set scrolloff=5
+
 set incsearch
 
 " Formating//Syntax//tab/space interaction
