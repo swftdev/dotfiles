@@ -9,7 +9,13 @@ call plug#begin()
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'tpope/vim-fugitive'
 call plug#end()
+
+nmap <leader>gs :G<CR>
+nmap <leader>gj :diffget //3<CR>
+nmap <leader>gf :diffget //2<CR> 
+
 
 """ TMUX-NAVIGATOR SETUP
 " Tmux wont unzoom without asking
@@ -18,7 +24,6 @@ let g:tmux_navigator_disable_when_zoomed = 1
 let g:tmux_navigator_save_on_switch = 2
 
 """ COC SETUP
-let g:coc_global_extensions = ['coc-python' ]
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
